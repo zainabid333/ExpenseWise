@@ -19,7 +19,6 @@ app.use(bodyParser.json());
 
 //Serve static files from the 'public' directory
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "public")));
 let expenses = [];
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
