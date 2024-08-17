@@ -1,0 +1,36 @@
+<section id="intro">
+    <h2>Welcome to ExpenseWise</h2>
+    <p>Your personal expense manager to help you track and manage your finances.</p>
+</section>
+<section id="features">
+    <h2>Features</h2>
+    <ul>
+        <li>Track your expenses</li>
+        <li>Categorize transactions</li>
+        <li>View spending reports</li>
+        <li>Set budget goals</li>
+    </ul>
+</section>
+<section id="expense-tracker">
+    <h2>Track Your Expenses</h2>
+    <form id="expense-form">
+        <input type="text" id="expense-name" placeholder="Expense Name" required>
+        <input type="number" id="expense-amount" placeholder="Amount" required>
+        <select id="expense-category">
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="utilities">Utilities</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="other">Other</option>
+        </select>
+        <button type="submit">Add Expense</button>
+    </form>
+    <div id="expense-list">
+        <h3>Your Expenses</h3>
+        <ul id="expenses">
+            {{#each expenses}}
+                <li>{{this.name}} - ${{this.amount}} ({{this.category}})</li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

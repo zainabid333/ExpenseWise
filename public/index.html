@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseWise</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ExpenseWise</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to ExpenseWise</h2>
+            <p>Your personal expense manager to help you track and manage your finances.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Track your expenses</li>
+                <li>Categorize transactions</li>
+                <li>View spending reports</li>
+                <li>Set budget goals</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Track your Expense</h2>
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Expense Name" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <select id="expense-category">
+                    <option value="food">Food</option>
+                    <option value="transport">Transportation</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
+                <button type="submit">Add Expense</button>
+            </form>
+            <div class="expense-list">
+                <h3>Your Expense</h3>
+                <ul id="expenses"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ExpenseWise. All rights reserved.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
